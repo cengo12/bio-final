@@ -54,16 +54,14 @@ def melting_temperature(primer_seq):
 
 
 def complement(seq):
-    complement_dict = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
-    return ''.join([complement_dict[base] for base in seq])
-
+    #complement_dict = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
+    #return ''.join([complement_dict[base] for base in seq])
+    seq = seq.translate(str.maketrans("ATGC", "TACG"))
+    return seq
 
 def endprimers(location, startprimer):
-
-    print(location)
     endprimerdict = {}
     gene_sequence = complement(genesequence)
-    print(gene_sequence)
 
     # Loop through each starting position in the gene sequence
     for i in range(location, len(gene_sequence)):
@@ -74,7 +72,7 @@ def endprimers(location, startprimer):
             primer_seq = gene_sequence[i:j]
 
             # Check end primers in complementary DNA sequence
-            if check_conditions(primer_seq) == False:
+            if not check_conditions(primer_seq):
                 continue
 
             # Check if tm is within 5 celcius.
