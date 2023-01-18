@@ -1,0 +1,35 @@
+.primers-container{
+    display: flex;
+}
+
+.primers{
+    overflow:auto;
+    height: 96vh;
+    white-space: nowrap;
+    margin-right: 12px;
+}
+
+.primers ul {
+    margin: 0 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 3px black;
+    background: #7070e8;
+}
+
+.primers ul li{
+    padding: 4px;
+    margin-bottom: 4px;
+}
+
+.primers ul li a{
+    color: white;
+}
+
+.primers ul li a:hover{
+    background: orange;
+}
+
+

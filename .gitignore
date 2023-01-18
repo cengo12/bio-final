@@ -1,0 +1,4 @@
+./pyinstaller/
+./src/backend/dist/
+.idea/
+./src/frontend/node_modules/
