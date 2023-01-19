@@ -31,6 +31,6 @@ Main logic of this application is written in python, and can be found in app.py 
 
 ## Deployment
 
-This project can be deployed to web as a web application, or as a local desktop app like the version in the releases.
+This project can be deployed to web as a web application, or as a local desktop app like the version in the releases 
 
-For deploying a local version, pywebview is used. You can follow the steps, and examples from https://pywebview.flowrl.com/.
+For deploying a local version, pywebview is used. You can follow the steps, and examples from https://pywebview.flowrl.com/. You can make a local build by running "van.py" file at ".src/backend/van.py".
