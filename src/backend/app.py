@@ -54,8 +54,6 @@ def melting_temperature(primer_seq):
 
 
 def complement(seq):
-    #complement_dict = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
-    #return ''.join([complement_dict[base] for base in seq])
     seq = seq.translate(str.maketrans("ATGC", "TACG"))
     return seq
 
