@@ -21,6 +21,8 @@ In this project our goal was to find all possible **Primer Designs** for PCR
 
 This tool takes input either as NCBI ID and calls for gene sequence from NCBI Database, or as text input in fasta file format. Then all possible **forward primers gets listed in blue block** with their index numbers(locations) according to the gene sequence provided. Each forward primer in this block **can be clicked** to list all of their possible **reverse primers in the orange section**.
 
+![image](https://github.com/cengo12/bio-final/blob/main/sample%20images/UIimage.png)
+
 ## Source Code
 
 For the main logic of the primer finding, no external libraries or frameworks are used. Only Entrez API is used in order to get gene sequence from NCBI database with ID.
