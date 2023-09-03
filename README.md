@@ -25,9 +25,10 @@ This tool takes input either as NCBI ID and calls for gene sequence from NCBI Da
 
 ## Source Code
 
-For the main logic of the primer finding, no external libraries or frameworks are used. Only Entrez API is used in order to get gene sequence from NCBI database with ID.
-
-Main logic of this application is written in python, and can be found in app.py file which is located at ["./src/backend/app.py"](https://github.com/cengo12/bio-final/blob/main/src/backend/app.py). For the user interface, React Js library is used. Corresponding source code to React can be found inside "./src/frontend/". For establishing communication of "app.py" and "React Ui", Flask web framework is used as backend. Files for the flask is located at ".src/backend/" directory.
+- For the main logic of the primer finding, no external libraries or frameworks are used. Only Entrez API is used in order to get gene sequence from NCBI database with ID.
+- Main logic of this application is written in python, and can be found in app.py file which is located at ["./src/backend/app.py"](https://github.com/cengo12/bio-final/blob/main/src/backend/app.py).
+- For the user interface, React Js library is used. Corresponding source code to React can be found inside "./src/frontend/".
+- For establishing communication of "app.py" and "React Ui", Flask web framework is used as backend. Files for the flask is located at ".src/backend/" directory.
 
 ## Deployment
 
